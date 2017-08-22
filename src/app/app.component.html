@@ -1,0 +1,22 @@
+
+<div>
+  <div class="navbar">NAVIGATION</div>
+
+  <div class="container">
+
+    <div class="sidebar" [ngClass]="{'sidenav-open': isSideNavOpen, 'sidenav-close': !isSideNavOpen}">
+      SIDEBAR
+    </div>
+
+    <div class="grid-list">
+      <span class="glyphicon" (click)="toggle()"
+            [ngClass]="{'glyphicon-chevron-left': isSideNavOpen, 'glyphicon-chevron-right': !isSideNavOpen}"></span>
+
+      <app-grid-list></app-grid-list>
+
+    </div>
+
+  </div>
+
+</div>
+

@@ -1,0 +1,12 @@
+
+  .card-list-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &.hidden {
+      display: none;
+    }
+  }
